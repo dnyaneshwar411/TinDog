@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 4em;
+    font: bolder;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    color: grey;
+}
+
+button {
+    padding: 0.8em 1.4em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 2px solid black;
+    margin-right: 1rem;
+}
+
+.btn2 {
+    background-color: black;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+i {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 4rem 0;
+}
+
+header {
+    position: relative;
+    color: white;
+    background-color: #ff4260;
+    padding: 3em 6em 2em;
+}
+
+header nav {
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    gap: 2em;
+}
+
+header nav .fa-bars {
+    display: none;
+}
+
+header #hero {
+    justify-content: center;
+    gap: 1rem;
+}
+
+header #hero .hero-box1 {
+    width: 35rem;
+}
+
+header #hero .hero-box2 img {
+    position: relative;
+    height: 35rem;
+    transform-origin: center center;
+    transform: rotateZ(30deg) translateY(7rem);
+    z-index: 1;
+}
+
+#features {
+    position: relative;
+    background-color: white;
+    z-index: 10;
+}
+
+#features #faeturesCarList {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#features #faeturesCarList .card {
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#features #faeturesCarList .card i {
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #ff4260;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#companyRevs {
+    padding: 5rem 10rem;
+    background-color: #ff4260;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#companyRevs .flex {
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+#companyRevs #dogImg img {
+    border-radius: 50%;
+    width: 10rem;
+    object-fit: cover;
+}
+
+#companyRevs #companies {
+    padding-top: 6rem;
+    gap: 2rem;
+}
+
+#companyRevs #companies img {
+    width: 10rem;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
+
+#plan {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#plan p {
+    margin-top: 1rem;
+}
+
+#plan #planCardList {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#plan #planCardList .card {
+    width: 20rem;
+    border: 2px solid grey;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+#plan #planCardList .card div {
+    padding: 0.5rem;
+    background-color: rgb(224, 216, 216);
+}
+
+#plan #planCardList .card h3 {
+    margin-block: 0.5rem;
+}
+
+#plan #planCardList .card p {
+    margin-block: 1rem;
+}
+
+#plan #planCardList .card button {
+    margin-block: 1rem 1.5rem;
+    padding-inline: 5rem;
+}
+
+#downloadSection {
+    background-color: #ff4260;
+    padding-block: 6rem 4rem;
+    color: white;
+    text-align: center;
+}
+
+#downloadSection h2 {
+    margin-bottom: 2rem;
+}
+
+#downloadSection button:nth-child(1) {
+    margin-right: 10rem;
+}
+
+footer {
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer p {
+    color: black;
+}
+
+footer #socials {
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #socials .flex {
+    flex-direction: column;
+}
+
+footer span:hover,
+footer span:hover p {
+    color: grey;
+    cursor: pointer;
+}
+
+footer #copyright p {
+    margin-top: 1rem;
+    color: grey;
+    font-weight: 600;
+}
+
+/* media queries */
+@media (max-width:1000px) {
+
+    header nav ul {
+        width: 20rem;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: rgb(255, 28, 66);
+        top: 0;
+        right: -100rem;
+        z-index: 2;
+        box-shadow: -2px -2px 120px 3px #bfbfbf;
+    }
+
+    header nav ul li {
+        position: relative;
+        z-index: 100;
+        display: block;
+        font-size: 2rem;
+    }
+
+    header nav .fa-bars {
+        z-index: 102;
+        display: block;
+    }
+
+    .navToggle {
+        right: 0;
+        position: fixed;
+    }
+
+    .center {
+        left: 0;
+        top: 0;
+        transform: translate(-20%, 50%);
+    }
+}
